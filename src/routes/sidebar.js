@@ -32,7 +32,7 @@ const routes = [
   {
     path: '/app/leads', // url
     icon: <InboxArrowDownIcon className={iconClasses}/>, // icon component
-    name: 'Leads', // name that appear in Sidebar
+    name: 'Mentor', // name that appear in Sidebar
   },
   {
     path: '/app/transactions', // url

@@ -30,7 +30,7 @@ function AddLeadModalBody({closeModal}){
                 "avatar": "https://reqres.in/img/faces/1-image.jpg"
             }
             dispatch(addNewLead({newLeadObj}))
-            dispatch(showNotification({message : "New Lead Added!", status : 1}))
+            dispatch(showNotification({message : "Berhasil Menambahkan Mentor", status : 1}))
             closeModal()
         }
     }
@@ -43,17 +43,17 @@ function AddLeadModalBody({closeModal}){
     return(
         <>
 
-            <InputText type="text" defaultValue={leadObj.first_name} updateType="first_name" containerStyle="mt-4" labelTitle="First Name" updateFormValue={updateFormValue}/>
+            <InputText type="text" defaultValue={leadObj.first_name} updateType="first_name" containerStyle="mt-4" labelTitle="Nama Awal" updateFormValue={updateFormValue}/>
 
-            <InputText type="text" defaultValue={leadObj.last_name} updateType="last_name" containerStyle="mt-4" labelTitle="Last Name" updateFormValue={updateFormValue}/>
+            <InputText type="text" defaultValue={leadObj.last_name} updateType="last_name" containerStyle="mt-4" labelTitle="Nama Akhir" updateFormValue={updateFormValue}/>
 
-            <InputText type="email" defaultValue={leadObj.email} updateType="email" containerStyle="mt-4" labelTitle="Email Id" updateFormValue={updateFormValue}/>
+            <InputText type="email" defaultValue={leadObj.email} updateType="email" containerStyle="mt-4" labelTitle="Email" updateFormValue={updateFormValue}/>
 
 
             <ErrorText styleClass="mt-16">{errorMessage}</ErrorText>
             <div className="modal-action">
-                <button  className="btn btn-ghost" onClick={() => closeModal()}>Cancel</button>
-                <button  className="btn btn-primary px-6" onClick={() => saveNewLead()}>Save</button>
+                <button  className="btn btn-ghost" onClick={() => closeModal()}>Batal</button>
+                <button  className="btn btn-primary px-6" onClick={() => saveNewLead()}>Simpan</button>
             </div>
         </>
     )

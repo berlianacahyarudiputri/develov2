@@ -26,7 +26,7 @@ function Login(){
             // Call API to check user credentials and save token in localstorage
             localStorage.setItem("token", "DumyTokenHere")
             setLoading(false)
-            window.location.href = '/app/welcome'
+            window.location.href = '/app/dashboard'
         }
     }
 
@@ -43,7 +43,7 @@ function Login(){
                         <LandingIntro />
                 </div>
                 <div className='py-24 px-10'>
-                    <h2 className='text-2xl font-semibold mb-2 text-center'>Login</h2>
+                    <h2 className='text-2xl font-semibold mb-2 text-center'>Login as a Admin user</h2>
                     <form onSubmit={(e) => submitForm(e)}>
 
                         <div className="mb-4">

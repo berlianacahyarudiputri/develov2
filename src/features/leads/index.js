@@ -13,12 +13,12 @@ const TopSideButtons = () => {
     const dispatch = useDispatch()
 
     const openAddNewLeadModal = () => {
-        dispatch(openModal({title : "Add New Lead", bodyType : MODAL_BODY_TYPES.LEAD_ADD_NEW}))
+        dispatch(openModal({title : "Tambah Mentor", bodyType : MODAL_BODY_TYPES.LEAD_ADD_NEW}))
     }
 
     return(
         <div className="inline-block float-right">
-            <button className="btn px-6 btn-sm normal-case btn-primary" onClick={() => openAddNewLeadModal()}>Add New</button>
+            <button className="btn px-6 btn-sm normal-case btn-primary" onClick={() => openAddNewLeadModal()}>Tambah Mentor</button>
         </div>
     )
 }
@@ -57,11 +57,11 @@ function Leads(){
                 <table className="table w-full">
                     <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Email Id</th>
-                        <th>Created At</th>
+                        <th>Nama</th>
+                        <th>Email </th>
+                        <th>Mulai</th>
                         <th>Status</th>
-                        <th>Assigned To</th>
+                        <th>Role</th>
                         <th></th>
                     </tr>
                     </thead>
