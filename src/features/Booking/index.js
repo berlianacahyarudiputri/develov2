@@ -35,24 +35,24 @@ function Leads(){
     
 
     const getDummyStatus = (index) => {
-        if(index % 5 === 0)return <div className="badge badge-primary">Aktif</div>
-        else if(index % 5 === 1)return <div className="badge badge-primary">Aktif</div>
-        else if(index % 5 === 2)return <div className="badge badge-primary">Aktif</div>
-        else if(index % 5 === 3)return <div className="badge badge-primary">Aktif</div>
-        else return <div className="badge badge-primary">Aktif</div>
+        if(index % 5 === 0)return <div className="badge">Not Interested</div>
+        else if(index % 5 === 1)return <div className="badge badge-primary">In Progress</div>
+        else if(index % 5 === 2)return <div className="badge badge-secondary">Sold</div>
+        else if(index % 5 === 3)return <div className="badge badge-accent">Need Followup</div>
+        else return <div className="badge badge-ghost">Open</div>
     }
 
     const deleteCurrentLead = (index) => {
         dispatch(openModal({title : "Confirmation", bodyType : MODAL_BODY_TYPES.CONFIRMATION, 
-        extraObject : { message : `Anda yakin ingin menghapus mentor ini?`, type : CONFIRMATION_MODAL_CLOSE_TYPES.LEAD_DELETE, index}}))
+        extraObject : { message : `Are you sure you want to delete this lead?`, type : CONFIRMATION_MODAL_CLOSE_TYPES.LEAD_DELETE, index}}))
     }
 
     return(
         <>
             
-            <TitleCard title="List Mentor" topMargin="mt-2" TopSideButtons={<TopSideButtons />}>
+            <TitleCard title="Current Leads" topMargin="mt-2" TopSideButtons={<TopSideButtons />}>
 
-                {/*  List in table format loaded from slice after api call */}
+                {/* Leads List in table format loaded from slice after api call */}
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
                     <thead>

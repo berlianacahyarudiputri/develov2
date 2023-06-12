@@ -22,9 +22,9 @@ function LeftSidebar(){
             <XMarkIcon className="h-5 inline-block w-5"/>
             </button>
 
-                <li className="mb-2 font-semibold text-xl">
+                <li className="mb-3 font-semibold text-xl">
                     
-                    <Link to={'/app/welcome'}><img className="mask mask-squircle w-10" src="/logodevelov.png" alt="DashWind Logo"/>Develov</Link> </li>
+                    <Link to={'/app/welcome'}><img src="/develovputih.png" alt="Develov Logo" className="w-40 inline-block"/></Link> </li>
                 {
                     routes.map((route, k) => {
                         return(

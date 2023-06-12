@@ -27,7 +27,7 @@ function AddLeadModalBody({closeModal}){
                 "email": leadObj.email,
                 "first_name": leadObj.first_name,
                 "last_name": leadObj.last_name,
-                "avatar": "/ningsih.png"
+                "avatar": "https://reqres.in/img/faces/1-image.jpg"
             }
             dispatch(addNewLead({newLeadObj}))
             dispatch(showNotification({message : "Berhasil Menambahkan Mentor", status : 1}))
