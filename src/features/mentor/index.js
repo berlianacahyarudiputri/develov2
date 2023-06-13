@@ -30,7 +30,7 @@ const TEAM_MEMBERS = [
 
 ]
 
-function Team(){
+function Mentor(){
 
 
     const [members, setMembers] = useState(TEAM_MEMBERS)
@@ -94,4 +94,4 @@ function Team(){
 }
 
 
-export default Team
+export default Mentor

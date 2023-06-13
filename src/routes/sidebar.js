@@ -15,6 +15,7 @@ import UsersIcon from '@heroicons/react/24/outline/UsersIcon'
 import KeyIcon from '@heroicons/react/24/outline/KeyIcon'
 import DocumentDuplicateIcon from '@heroicons/react/24/outline/DocumentDuplicateIcon'
 import UserGroupIcon  from '@heroicons/react/24/outline/UserGroupIcon'
+import ChartBarIcon from '@heroicons/react/24/outline/ChartBarIcon'
 
 const iconClasses = `h-6 w-6`
 const submenuIconClasses = `h-5 w-5`
@@ -27,14 +28,24 @@ const routes = [
     name: 'Dashboard',
   },
   {
-    path: '/app/leads', // url
+    path: '/app/mentor', // url
     icon: <UserGroupIcon className={iconClasses}/>, // icon component
     name: 'Mentor', // name that appear in Sidebar
   },
   {
+    path: '/app/leads', // url
+    icon: <UserGroupIcon className={iconClasses}/>, // icon component
+    name: 'Leads', // name that appear in Sidebar
+  },
+  {
+    path: '/app/charts', // url
+    icon: <ChartBarIcon className={iconClasses}/>, // icon component
+    name: 'Analytics', // name that appear in Sidebar
+  },
+  {
     path: '/app/transactions', // url
     icon: <CurrencyDollarIcon className={iconClasses}/>, // icon component
-    name: 'Booking', // name that appear in Sidebar
+    name: 'Transactions', // name that appear in Sidebar
   },
 
   {

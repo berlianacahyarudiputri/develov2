@@ -12,7 +12,7 @@ const TopSideButtons = ({removeFilter, applyFilter, applySearch}) => {
 
     const [filterParam, setFilterParam] = useState("")
     const [searchText, setSearchText] = useState("")
-    const locationFilters = ["Paris", "London", "Canada", "Peru", "Tokyo"]
+    const locationFilters = ["Pengajuan", "Dibatalkan", "Selesai",]
 
     const showFiltersAndApply = (params) => {
         applyFilter(params)
@@ -46,7 +46,7 @@ const TopSideButtons = ({removeFilter, applyFilter, applySearch}) => {
                         })
                     }
                     <div className="divider mt-0 mb-0"></div>
-                    <li><a onClick={() => removeAppliedFilter()}>Remove Filter</a></li>
+                    <li><a onClick={() => removeAppliedFilter()}>Hapus Filter</a></li>
                 </ul>
             </div>
         </div>
